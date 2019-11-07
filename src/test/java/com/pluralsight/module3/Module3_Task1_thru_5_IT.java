@@ -93,7 +93,7 @@ public class Module3_Task1_thru_5_IT {
     @Test
     public void _task4() throws Exception {
       try {
-        Mockito.verify(mockStatement).setFloat(3, 1.50f);
+        Mockito.verify(mockStatement).setFloat(3, 4.50f);
         called_setPrice = true;
         Mockito.verify(mockStatement).setInt(4, 1);
         called_setId = true;
