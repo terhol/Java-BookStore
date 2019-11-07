@@ -46,7 +46,7 @@ public class Module3_Task1_thru_5_IT {
       bookDAO = new BookDAO(spyConnection);
       spyBookDAO = Mockito.spy(bookDAO);
 
-      Book tempBookObject = new Book(1, "1984", "George Orwell", 1.50f);
+      Book tempBookObject = new Book(1, "1984", "George Orwell", 4.50f);
       try {
          Mockito.when(spyConnection.prepareStatement(sql)).thenReturn(mockStatement);
          method =  BookDAO.class.getMethod("updateBook", Book.class);
