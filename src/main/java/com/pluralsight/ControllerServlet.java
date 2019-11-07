@@ -146,7 +146,7 @@ dispatcher.forward(request, response);
 int id = Integer.parseInt(request.getParameter("id"));
 String title = request.getParameter("booktitle");
 String author = request.getParameter("bookauthor");
-Float price = Float.parseFloat(request.getParameter("bookprice"));
+float price = Float.parseFloat(request.getParameter("bookprice"));
 
 Book newBook = new Book(id, title,author,price);
 bookDAO.updateBook(newBook);
